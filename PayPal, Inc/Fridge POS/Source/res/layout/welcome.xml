@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:scrollbars="vertical"
+    android:keepScreenOn="true"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:background="@drawable/beerfridge">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='Welcome to "Beer @ Work" Day!'
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:gravity="center"
+        android:textColor="#ffff0f01"
+        android:textSize="40sp"
+        android:textIsSelectable="false" />
+
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:src="@drawable/barney"
+         />
+
+    <ImageButton
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/bottle"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:onClick="grab" />
+
+</LinearLayout>

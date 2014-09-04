@@ -1,0 +1,80 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:keepScreenOn="true"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:weightSum="1" android:focusable="true" android:focusableInTouchMode="true"
+        android:background="@drawable/party1" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="!! Beer @ Work Day !!"
+        android:textSize="40sp"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffff0505" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey! It's Beer @ Work Day! Yes, that's right! Grab a bottle from this Fridge, but it would also be great if you could pitch in a buck or two maybe. And what better? PayPal accepted! So go ahead, checkin to this Hi-tech Fridge, and more importantly, don't forget to socialize and have a good time!"
+        android:id="@+id/textView2"
+        android:textSize="15sp"
+        android:textColor="#ff0921ff" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" android:layout_marginTop="5dp"
+        android:text="@string/title_fixed_price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:textColor="#ff1dff0d" />
+
+    <EditText android:id="@+id/fixed_price" android:layout_width="150dp"
+        android:layout_height="30dp" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:hint="@string/price_hint"
+        android:textSize="25sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="numberDecimal"
+        android:singleLine="false"
+        android:background="#ff000000" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+
+        <ImageButton
+            android:src="@drawable/no"
+            android:scaleType="fitXY"
+            android:onClick="thanks"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="75dp"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButton1" />
+
+
+        <ImageButton
+            android:src="@drawable/checkout"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:id="@+id/imageButton2" />
+
+    </LinearLayout>
+
+ </LinearLayout>

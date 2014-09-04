@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:keepScreenOn="true"
+    android:background="@drawable/back">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" android:gravity="left" android:orientation="horizontal"
+        android:weightSum="1">
+
+    <TextView android:id="@+id/purchase_status_text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/purchase_status_text" android:textStyle="bold" />
+
+    <TextView android:id="@+id/purchase_status_checkin" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase_status_checkin_default_text" android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" android:gravity="center" android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button android:id="@+id/search_for_clients_button" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Reload Checkins!" android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/checkout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:textStyle="bold"
+            android:text="Just click on your photo to complete checkout!" />
+
+    </LinearLayout>
+
+    <GridView android:id="@+id/gridview" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal"
+        android:horizontalSpacing="5dp" android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" android:verticalSpacing="5dp" />
+
+    <TextView android:id="@+id/empty_checkedin_clients" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="center"
+        android:text="No checked in people found!"
+        android:textStyle="bold" />
+
+</LinearLayout>
