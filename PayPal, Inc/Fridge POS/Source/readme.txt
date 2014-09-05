@@ -1,5 +1,7 @@
 Instructions for compiling the FridgePOS app
 
+WATCH MY FINAL SUMMER 2014 INTERN VIDEO AT: https://www.youtube.com/watch?v=qJqJ5BFZboE&feature=youtu.be
+
 Prerequisites
 ============================================================================================================================================================================================================
 1. Install Android Studio (0.4.3 +)
